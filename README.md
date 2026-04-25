@@ -10,7 +10,7 @@
 [![Forks](https://img.shields.io/github/forks/prateekpatil0805-ui/newfolder?style=flat-square&color=blue)](https://github.com/prateekpatil0805-ui/newfolder/network/members)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/prateekpatil0805-ui/newfolder/pulls)
 [![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=flat-square)](LICENSE)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-April%202026-purple?style=flat-square)]()
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-April%2025%2C%202026-purple?style=flat-square)]()
 
 **A comprehensive, community-curated collection of Generative AI tools, frameworks, models, and learning resources.**
 
@@ -61,22 +61,23 @@
 
 | Provider | Model(s) | Context Window | Highlights |
 |----------|----------|---------------|------------|
-| [OpenAI](https://platform.openai.com/) | GPT-4.1, GPT-4o, o3, o4-mini | Up to 1M tokens | Industry leader, function calling, vision, audio |
-| [Anthropic](https://www.anthropic.com/) | Claude 4, Claude 3.5 Sonnet/Haiku | 200K tokens | Extended thinking, artifacts, best for coding |
-| [Google](https://ai.google.dev/) | Gemini 2.5 Pro/Flash | 1M tokens | Multimodal native, grounding with Search |
+| [OpenAI](https://platform.openai.com/) | GPT-5.5, GPT-5.5 Thinking, GPT-5.4 Pro | Up to 1M tokens | Agentic system, 5 reasoning levels, multi-step planning |
+| [Anthropic](https://www.anthropic.com/) | Claude Opus 4.7, Claude Sonnet 4, Claude Haiku 4 | 200K tokens | Extended thinking, artifacts, top-tier coding |
+| [Google](https://ai.google.dev/) | Gemini 3.1 Pro, Gemini 3.1 Flash, Flash-Lite | 1M tokens | Multimodal native, thinking mode, TTS |
+| [Meta](https://meta.ai/) | Meta Muse Spark | — | Closed-weight frontier model, proprietary (April 2026) |
 | [Cohere](https://cohere.com/) | Command R+ | 128K tokens | Enterprise RAG, multilingual |
-| [xAI](https://x.ai/) | Grok-3 | 128K tokens | Real-time knowledge, humor-tuned |
+| [xAI](https://x.ai/) | Grok 4.20, Grok 4.3 Beta | 2M tokens | Multi-agent architecture (4/16 agents), real-time X data |
 
 ### Open-Weight Models
 
 | Model | Creator | Parameters | License | Best For |
 |-------|---------|-----------|---------|----------|
-| [Llama 4](https://llama.meta.com/) | Meta | 10B–400B+ | Llama License | General purpose, fine-tuning |
-| [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) | DeepSeek | 671B (MoE) | MIT | Reasoning, code, math |
-| [Mistral Large](https://mistral.ai/) | Mistral AI | Various | Apache 2.0 | European AI, multilingual |
-| [Qwen 3](https://github.com/QwenLM/Qwen3) | Alibaba | 0.6B–235B | Apache 2.0 | Multilingual, thinking mode, MoE |
-| [Gemma 2](https://github.com/google-deepmind/gemma) | Google | 2B–27B | Gemma License | Lightweight, on-device |
-| [Phi-4](https://huggingface.co/microsoft/phi-4) | Microsoft | 14B | MIT | Small model, high quality |
+| [DeepSeek-V4](https://github.com/deepseek-ai/DeepSeek-V3) | DeepSeek | 1.6T Pro / 284B Flash (MoE) | MIT | Reasoning, code — released Apr 24, 2026 |
+| [Llama 4 Scout/Maverick](https://llama.meta.com/) | Meta | 17B active (109B–400B total, MoE) | Llama License | 10M context (Scout), multimodal |
+| [Qwen 3](https://github.com/QwenLM/Qwen3) | Alibaba | 0.6B–235B | Apache 2.0 | Thinking/non-thinking modes, MoE |
+| [Mistral Small 4](https://mistral.ai/) | Mistral AI | 119B total (6B active, MoE) | Apache 2.0 | Hybrid: reasoning + vision + code, 256K ctx |
+| [Gemma 4](https://github.com/google-deepmind/gemma) | Google | E2B to 31B (dense & MoE) | Apache 2.0 | On-device, multimodal, 256K ctx |
+| [Phi-4](https://huggingface.co/microsoft/phi-4) | Microsoft | 14B (+ reasoning & vision variants) | MIT | Small model, reasoning, multimodal |
 | [Command R](https://huggingface.co/CohereForAI) | Cohere | 35B/104B | CC-BY-NC | RAG-optimized |
 
 <div align="center">
@@ -89,17 +90,17 @@ Performance vs Cost (approximate, as of April 2026)
                     💰 Cost per 1M tokens (output)
                 Low ◄──────────────────────────► High
     ┌─────────────────────────────────────────────────┐
-H   │                                   ★ Claude 4    │
-i   │                        ★ GPT-4.1                │
-g   │               ★ Gemini 2.5 Pro                  │
-h   │  ★ DeepSeek-V3                                  │
-    │  ★ Llama 4 (self-host)         ★ Grok-3         │
+H   │                              ★ Claude Opus 4.7  │
+i   │                        ★ GPT-5.5                │
+g   │               ★ Gemini 3.1 Pro                  │
+h   │  ★ DeepSeek-V4                                  │
+    │  ★ Llama 4 (self-host)     ★ Grok 4.20          │
 Q   ├─────────────────────────────────────────────────┤
-u   │  ★ Qwen 3      ★ Gemini Flash                  │
-a   │  ★ Phi-4                       ★ GPT-4o-mini   │
-l   │  ★ Gemma 2                                      │
+u   │  ★ Qwen 3      ★ Gemini 3.1 Flash              │
+a   │  ★ Mistral S4              ★ GPT-5.5 Flash      │
+l   │  ★ Gemma 4                                      │
 i   │                                                  │
-t   │  ★ Llama 3.1-8B                                │
+t   │  ★ Phi-4                                        │
 y   │                                                  │
     └─────────────────────────────────────────────────┘
 ```
@@ -167,12 +168,12 @@ y   │                                                  │
 
 ## 🎨 Image Generation
 
-- **[Stable Diffusion 3.5](https://stability.ai/)** — Open-source image generation. State-of-the-art quality with community models. `Python`
-- **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** — Node-based GUI for advanced Stable Diffusion workflows. Extremely powerful and flexible. `Python`
-- **[FLUX](https://github.com/black-forest-labs/flux)** — Next-gen image model from Black Forest Labs (ex-Stability AI team). `Python`
+- **[FLUX.2](https://github.com/black-forest-labs/flux)** — Next-gen image model from Black Forest Labs. State-of-the-art photorealism and prompt adherence. Pro/Dev/Schnell variants. `Python`
+- **[Stable Diffusion 3.5](https://stability.ai/)** — Open-source image generation with massive community ecosystem of LoRAs and ControlNets. `Python`
+- **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** — Node-based GUI for advanced diffusion workflows. Extremely powerful and flexible. `Python`
 - **[Fooocus](https://github.com/lllyasviel/Fooocus)** — Simplified Stable Diffusion interface. Focus on prompting, not parameters. `Python`
 - **[DALL·E 3](https://openai.com/dall-e-3)** — OpenAI's image generation model via API. `API`
-- **[Midjourney](https://www.midjourney.com/)** — Premium AI art generation via Discord/Web. `Web`
+- **[Midjourney](https://www.midjourney.com/)** — Premium AI art generation via web. `Web`
 - **[Ideogram](https://ideogram.ai/)** — Excellent at text rendering in images. `Web`
 - **[Leonardo.ai](https://leonardo.ai/)** — AI art platform with fine-tuned models and a generous free tier. `Web`
 
@@ -202,14 +203,14 @@ y   │                                                  │
 
 ## 💻 Code Generation & AI IDEs
 
-- **[GitHub Copilot](https://github.com/features/copilot)** — AI pair programmer integrated into VS Code, JetBrains, and more. `Extension`
-- **[Cursor](https://cursor.com/)** — AI-first code editor built on VS Code. Chat, autocomplete, and multi-file editing. `Desktop`
-- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — Anthropic's terminal-based agentic coding tool. Plans and executes complex tasks. `CLI`
-- **[Windsurf](https://codeium.com/windsurf)** — AI-powered IDE with Flows for deep codebase understanding. `Desktop`
+- **[GitHub Copilot](https://github.com/features/copilot)** — AI pair programmer integrated into VS Code, JetBrains, and more. Now with Copilot Workspace for agentic tasks. `Extension`
+- **[Cursor](https://cursor.com/)** — AI-first code editor (v3.2). Canvases, multitask subagents, and deep codebase indexing. `Desktop`
+- **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — Anthropic's terminal-based agentic coding tool. Plans and executes complex tasks autonomously. `CLI`
+- **[Windsurf](https://windsurf.com/)** — AI-powered IDE by Cognition AI (formerly Codeium). Cascade agent for autonomous workflows. `Desktop`
 - **[Aider](https://github.com/Aider-AI/aider)** — AI pair programming in your terminal. Works with any LLM. `CLI` `Python`
-- **[Continue](https://github.com/continuedev/continue)** — Open-source AI code assistant for VS Code and JetBrains. `Extension`
+- **[Continue](https://github.com/continuedev/continue)** — Open-source AI code checks, enforceable in CI. `Extension` `CLI`
 - **[Cody](https://sourcegraph.com/cody)** — AI coding assistant by Sourcegraph with full codebase context. `Extension`
-- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's open-source terminal AI assistant. `CLI`
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's open-source terminal AI agent powered by Gemini. `CLI`
 
 ---
 
