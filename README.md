@@ -74,7 +74,7 @@
 | [Llama 4](https://llama.meta.com/) | Meta | 10B–400B+ | Llama License | General purpose, fine-tuning |
 | [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) | DeepSeek | 671B (MoE) | MIT | Reasoning, code, math |
 | [Mistral Large](https://mistral.ai/) | Mistral AI | Various | Apache 2.0 | European AI, multilingual |
-| [Qwen 2.5](https://github.com/QwenLM/Qwen2.5) | Alibaba | 0.5B–72B | Apache 2.0 | Multilingual, long context |
+| [Qwen 3](https://github.com/QwenLM/Qwen3) | Alibaba | 0.6B–235B | Apache 2.0 | Multilingual, thinking mode, MoE |
 | [Gemma 2](https://github.com/google-deepmind/gemma) | Google | 2B–27B | Gemma License | Lightweight, on-device |
 | [Phi-4](https://huggingface.co/microsoft/phi-4) | Microsoft | 14B | MIT | Small model, high quality |
 | [Command R](https://huggingface.co/CohereForAI) | Cohere | 35B/104B | CC-BY-NC | RAG-optimized |
@@ -95,7 +95,7 @@ g   │               ★ Gemini 2.5 Pro                  │
 h   │  ★ DeepSeek-V3                                  │
     │  ★ Llama 4 (self-host)         ★ Grok-3         │
 Q   ├─────────────────────────────────────────────────┤
-u   │  ★ Qwen 2.5    ★ Gemini Flash                  │
+u   │  ★ Qwen 3      ★ Gemini Flash                  │
 a   │  ★ Phi-4                       ★ GPT-4o-mini   │
 l   │  ★ Gemma 2                                      │
 i   │                                                  │
@@ -157,7 +157,7 @@ y   │                                                  │
 
 - **[Ollama](https://github.com/ollama/ollama)** — Run LLMs locally with one command. Supports Llama, Mistral, Gemma, and more. The easiest way to get started. `Go`
 - **[vLLM](https://github.com/vllm-project/vllm)** — High-throughput LLM serving with PagedAttention. Production-grade. `Python`
-- **[llama.cpp](https://github.com/ggerganov/llama.cpp)** — Run LLMs in C/C++ with minimal setup. CPU and GPU support. `C++`
+- **[llama.cpp](https://github.com/ggml-org/llama.cpp)** — Run LLMs in C/C++ with minimal setup. CPU and GPU support. `C++`
 - **[TGI](https://github.com/huggingface/text-generation-inference)** — Hugging Face's production inference server. Optimized for throughput. `Rust` `Python`
 - **[LocalAI](https://github.com/mudler/LocalAI)** — Free, open-source OpenAI-compatible API. Run models locally. `Go`
 - **[LM Studio](https://lmstudio.ai/)** — Desktop app for discovering, downloading, and running local LLMs with a GUI. `Desktop`
@@ -168,7 +168,7 @@ y   │                                                  │
 ## 🎨 Image Generation
 
 - **[Stable Diffusion 3.5](https://stability.ai/)** — Open-source image generation. State-of-the-art quality with community models. `Python`
-- **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** — Node-based GUI for advanced Stable Diffusion workflows. Extremely powerful and flexible. `Python`
+- **[ComfyUI](https://github.com/Comfy-Org/ComfyUI)** — Node-based GUI for advanced Stable Diffusion workflows. Extremely powerful and flexible. `Python`
 - **[FLUX](https://github.com/black-forest-labs/flux)** — Next-gen image model from Black Forest Labs (ex-Stability AI team). `Python`
 - **[Fooocus](https://github.com/lllyasviel/Fooocus)** — Simplified Stable Diffusion interface. Focus on prompting, not parameters. `Python`
 - **[DALL·E 3](https://openai.com/dall-e-3)** — OpenAI's image generation model via API. `API`
@@ -206,7 +206,7 @@ y   │                                                  │
 - **[Cursor](https://cursor.com/)** — AI-first code editor built on VS Code. Chat, autocomplete, and multi-file editing. `Desktop`
 - **[Claude Code](https://docs.anthropic.com/en/docs/claude-code)** — Anthropic's terminal-based agentic coding tool. Plans and executes complex tasks. `CLI`
 - **[Windsurf](https://codeium.com/windsurf)** — AI-powered IDE with Flows for deep codebase understanding. `Desktop`
-- **[Aider](https://github.com/paul-gauthier/aider)** — AI pair programming in your terminal. Works with any LLM. `CLI` `Python`
+- **[Aider](https://github.com/Aider-AI/aider)** — AI pair programming in your terminal. Works with any LLM. `CLI` `Python`
 - **[Continue](https://github.com/continuedev/continue)** — Open-source AI code assistant for VS Code and JetBrains. `Extension`
 - **[Cody](https://sourcegraph.com/cody)** — AI coding assistant by Sourcegraph with full codebase context. `Extension`
 - **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — Google's open-source terminal AI assistant. `CLI`
@@ -270,7 +270,7 @@ y   │                                                  │
 
 - **[Hugging Face Transformers](https://github.com/huggingface/transformers)** — The standard library for working with transformer models. Training, fine-tuning, inference. `Python`
 - **[Unsloth](https://github.com/unslothai/unsloth)** — Fine-tune LLMs 2-5x faster with 80% less memory. `Python`
-- **[Axolotl](https://github.com/OpenAccess-AI-Collective/axolotl)** — Streamlined fine-tuning with support for multiple techniques (LoRA, QLoRA, RLHF). `Python`
+- **[Axolotl](https://github.com/axolotl-ai-cloud/axolotl)** — Streamlined fine-tuning with support for multiple techniques (LoRA, QLoRA, RLHF). `Python`
 - **[LitGPT](https://github.com/Lightning-AI/litgpt)** — Pre-train, fine-tune, and deploy LLMs with Lightning. `Python`
 - **[TRL](https://github.com/huggingface/trl)** — Transformer Reinforcement Learning. RLHF, DPO, PPO training. `Python`
 - **[PEFT](https://github.com/huggingface/peft)** — Parameter-Efficient Fine-Tuning methods (LoRA, QLoRA, etc.). `Python`
