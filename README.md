@@ -76,7 +76,7 @@
 | [Mistral Large](https://mistral.ai/) | Mistral AI | Various | Apache 2.0 | European AI, multilingual |
 | [Qwen 2.5](https://github.com/QwenLM/Qwen2.5) | Alibaba | 0.5B–72B | Apache 2.0 | Multilingual, long context |
 | [Gemma 2](https://github.com/google-deepmind/gemma) | Google | 2B–27B | Gemma License | Lightweight, on-device |
-| [Phi-4](https://github.com/microsoft/phi-4) | Microsoft | 14B | MIT | Small model, high quality |
+| [Phi-4](https://huggingface.co/microsoft/phi-4) | Microsoft | 14B | MIT | Small model, high quality |
 | [Command R](https://huggingface.co/CohereForAI) | Cohere | 35B/104B | CC-BY-NC | RAG-optimized |
 
 <div align="center">
@@ -125,7 +125,7 @@ y   │                                                  │
 - **[CrewAI](https://github.com/crewAIInc/crewAI)** — Role-based multi-agent orchestration. Great for complex workflows. `Python`
 - **[AutoGen](https://github.com/microsoft/autogen)** — Microsoft's framework for multi-agent conversations. `Python`
 - **[Smolagents](https://github.com/huggingface/smolagents)** — Hugging Face's lightweight agent framework. Simple and effective. `Python`
-- **[Phidata](https://github.com/phidatahq/phidata)** — Build AI assistants with memory, knowledge, and tools. `Python`
+- **[Agno](https://github.com/agno-agi/agno)** — Build, run, and manage agentic software at scale. Formerly Phidata. `Python`
 - **[OpenAI Agents SDK](https://github.com/openai/openai-agents-python)** — Official OpenAI SDK for building agentic applications. `Python`
 
 ### RAG Frameworks
@@ -133,8 +133,8 @@ y   │                                                  │
 - **[LlamaIndex](https://github.com/run-llama/llama_index)** — Best-in-class RAG framework with advanced retrieval strategies. `Python`
 - **[Ragas](https://github.com/explodinggradients/ragas)** — Evaluation framework specifically designed for RAG pipelines. `Python`
 - **[Unstructured](https://github.com/Unstructured-IO/unstructured)** — Parse and chunk any document type (PDF, DOCX, HTML, images). `Python`
-- **[LangChain Text Splitters](https://python.langchain.com/docs/modules/data_connection/document_transformers/)** — Intelligent text chunking strategies for RAG. `Python`
-- **[Embedchain](https://github.com/embedchain/embedchain)** — RAG framework that simplifies creating chat bots over any dataset. `Python`
+- **[LangChain Text Splitters](https://python.langchain.com/docs/concepts/text_splitters/)** — Intelligent text chunking strategies for RAG. `Python`
+- **[Mem0](https://github.com/mem0ai/mem0)** — Universal memory layer for AI agents. Formerly Embedchain. `Python`
 
 ---
 
